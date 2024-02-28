@@ -21,7 +21,4 @@ ServerEvents.recipes(event => {
 
     // removed " , "createaddition:overcharged_casing/botania" " from the inputs as it doesnt exist anymore https://discord.com/channels/649590685829300245/718330850877505536/1212446230752403567
     event.recipes.botania.runic_altar("pedestals:block_pedestal", ["botania:rune_water", "botania:rune_fire", "botania:rune_earth", "botania:rune_air", "botania:rune_spring", "botania:rune_summer", "botania:rune_autumn", "botania:rune_winter", "botania:rune_lust", "botania:rune_gluttony", "botania:rune_greed", "botania:rune_sloth", "botania:rune_wrath", "botania:rune_envy","botania:rune_pride"], 50000);
-    
-    // something gotta ask nord the vpn
-    // crecipetype:botania:pure daisy.remove(blockstate:botania: livingwood);
 });

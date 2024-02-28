@@ -14,9 +14,9 @@ ServerEvents.recipes((event) => {
 
         { input: Fluid.of('thermal:sap', 1000), type: 'thermal:refinery' },
 
-        { output: 'botania:tiny_potato', type: 'botania:mana_infusion'}
+        { output: 'botania:tiny_potato', type: 'botania:mana_infusion'},
 
-        // recipetype:botania:mana_infusion).remove(hotania:tiny_potato);
+        { output: 'botania:livingwood_log'}
     ];
 
     recipes.forEach((recipe) => {
