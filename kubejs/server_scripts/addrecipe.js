@@ -16,7 +16,8 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.smelter_catalyst("mythicbotany:alfheim_rune").primaryMod(5.0).secondaryMod(1.0).energyMod(1.0).minChance(1.0).useChance(1.0);
 
     // removed https://discord.com/channels/649590685829300245/718330850877505536/1212439409727897640
-    // event.recipes.botania.pure_daisy("botania:livingwood", "thermal:sawdust_block", 30);
+    // readded https://discord.com/channels/649590685829300245/718330850877505536/1212463621557330010
+    event.recipes.botania.pure_daisy("botania:livingwood_log", "thermal:sawdust_block", 30);
 
 
     // removed " , "createaddition:overcharged_casing/botania" " from the inputs as it doesnt exist anymore https://discord.com/channels/649590685829300245/718330850877505536/1212446230752403567
