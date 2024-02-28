@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
 
         { output: 'botania:tiny_potato', type: 'botania:mana_infusion'},
 
-        { output: 'botania:livingwood_log'}
+        {id: "botania:pure_daisy/livingwood"}
     ];
 
     recipes.forEach((recipe) => {
