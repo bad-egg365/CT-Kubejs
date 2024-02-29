@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.bottler("thermal:sawdust_block", ["thermal:sawdust", Fluid.of("minecraft:water", 500)], 0, 1200);
     event.recipes.thermal.bottler("create:blaze_cake", ["create:blaze_cake_base", Fluid.of("cofh_core:potion", 500)], 0, 16000);
 
-    event.recipes.thermal.crucible(Fluid.of("immersiveengineering:potion", 1000), "thermal:xp_stew", 32000);
+    event.recipes.thermal.crucible(Fluid.of("immersiveengineering:potion", 1000), "thermal:xp_stew", 0, 32000);
 
     event.recipes.thermal.brewer(Fluid.of("cofh_core:potion", 2000), ["thermal:spring_salad", Fluid.of("immersiveengineering:potion", 64000)], 0, 72000);
 
