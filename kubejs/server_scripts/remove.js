@@ -18,7 +18,8 @@ ServerEvents.recipes((event) => {
 
         {id: "botania:pure_daisy/livingwood"},
 
-        {type: "thermal:bottler", output: 'create:blaze_cake', input: ['create:blaze_cake_base', Fluid.of('cofh_core:potion', 500)]},
+        {output: 'create:blaze_cake', input: ['create:blaze_cake_base']},
+
         // {type: "createaddition:liquid_burning", superheated: true,},
     ];
 
