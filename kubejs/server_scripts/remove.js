@@ -26,8 +26,9 @@ ServerEvents.recipes((event) => {
 
         {input: [/mysticalagriculture:[a-z_]*seeds/], type: "thermal:insolator"},
         
-        {seed: [/mysticalagriculture:[a-z_]*seeds/], type: "botanypots:crop"},
-
+        // {seed: [/mysticalagriculture:[a-z_]*seeds/], type: "botanypots:crop"},
+        {id:/botanypots:mysticalagriculture\/crop\/.*/, type: "botanypots:crop"},
+        
         // {type: "createaddition:liquid_burning", output:"forge:biofuel"},
     ];
 
