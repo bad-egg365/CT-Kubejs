@@ -20,8 +20,9 @@ ServerEvents.recipes((event) => {
 
         {output: 'create:blaze_cake', input: ['create:blaze_cake_base']},
 
-        {mod: 'thermal', output:'thermal:frost_melon_seeds'}
+        {mod: 'thermal', output:'thermal:frost_melon_seeds'},
 
+        {type: 'botania:runic_altar', input:'botania:mana_pearl'}
         // {type: "createaddition:liquid_burning", superheated: true,},
     ];
 
