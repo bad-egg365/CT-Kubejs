@@ -29,6 +29,8 @@ ServerEvents.recipes((event) => {
         // {seed: [/mysticalagriculture:[a-z_]*seeds/], type: "botanypots:crop"},
         {id:/botanypots:mysticalagriculture\/crop\/.*/, type: "botanypots:crop"},
         
+        {id:"botanypots:thermal/crop/frost_melon", type: "botanypots:crop"},
+        
         // {type: "createaddition:liquid_burning", superheated:"true"},
         {id:"createaddition:liquid_burning/biofuel"},
         {id:"createaddition:liquid_burning/biodiesel"},
