@@ -22,8 +22,8 @@ ServerEvents.recipes((event) => {
 
         {mod: 'thermal', output:'thermal:frost_melon_seeds'},
 
-        {type: 'botania:runic_altar', input:'botania:mana_pearl'}
-        
+        {type: 'botania:runic_altar', input:'botania:mana_pearl'},
+
         {input: [/mysticalagriculture:[a-z_]*seeds/], type: "thermal:insolator"},
         
         {seed: [/mysticalagriculture:[a-z_]*seeds/], type: "botanypots:crop"},
