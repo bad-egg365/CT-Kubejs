@@ -20,7 +20,11 @@ ServerEvents.recipes((event) => {
 
         {output: 'create:blaze_cake', input: ['create:blaze_cake_base']},
 
-        // {type: "createaddition:liquid_burning", superheated: true,},
+        {input: [/mysticalagriculture:[a-z_]*seeds/], type: "thermal:insolator"},
+        
+        {seed: [/mysticalagriculture:[a-z_]*seeds/], type: "botanypots:crop"},
+
+        // {type: "createaddition:liquid_burning", output:"forge:biofuel"},
     ];
 
     recipes.forEach((recipe) => {
