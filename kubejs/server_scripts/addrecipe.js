@@ -11,6 +11,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.thermal.insolator( ["mysticalagriculture:tertium_essence", "botania:grass_seeds"], "botania:grass_seeds", 2000, 204800);
 
+    event.recipes.thermal.insolator("mysticalagriculture:prudentium_essence","mysticalagriculture:tertium_essence", 0, 20000);
+
     event.recipes.thermal.smelter(["botania:alfhein_portal"], ["6x botania:livingwood", "mythichobotany:alfheim_rune", "mysticalagradditions:creative_essence"], 0, 1500000);
 
     event.recipes.thermal.smelter_catalyst("mythicbotany:alfheim_rune").primaryMod(5.0).secondaryMod(1.0).energyMod(1.0).minChance(1.0).useChance(1.0);
@@ -18,6 +20,9 @@ ServerEvents.recipes(event => {
     // removed https://discord.com/channels/649590685829300245/718330850877505536/1212439409727897640
     // readded https://discord.com/channels/649590685829300245/718330850877505536/1212463621557330010
     event.recipes.botania.pure_daisy("botania:livingwood_log", "thermal:sawdust_block", 30);
+
+    event.recipes.botania.mana_infusion("botania:gaia_ingot", "minecraft:nether_star", 50000);
+    event.recipes.botania.mana_infusion(Item.of("botania:gaia_ingot",2), "minecraft:nether_star", 50000, "botania:alchemy_catalyst");
 
 
     // removed " , "createaddition:overcharged_casing/botania" " from the inputs as it doesnt exist anymore https://discord.com/channels/649590685829300245/718330850877505536/1212446230752403567
