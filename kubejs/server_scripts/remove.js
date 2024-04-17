@@ -35,6 +35,13 @@ ServerEvents.recipes((event) => {
         {id:"createaddition:liquid_burning/biofuel"},
         {id:"createaddition:liquid_burning/biodiesel"},
         {id:"createaddition:liquid_burning/compat/thermal/refined_fuel"},
+
+
+        {id: "powah:energizing/energized_steel"},
+        {id: "powah:energizing/blazing_crystal"},
+        {id: "powah:energizing/blazing_crystal_2"},
+        {id: "powah:energizing/niotic_crystal"},
+        {id: "powah:energizing/spirited_crystal"},
     ];
 
     recipes.forEach((recipe) => {
