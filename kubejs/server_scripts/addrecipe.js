@@ -1,9 +1,13 @@
-ServerEvents.recipes(event => {
-    
+ServerEvents.recipes(event => {    
     event.recipes.thermal.furnace(["mysticalagriculture:soulium_dust"], "minecraft:prismarine_crystals", 1, 1920)
     
     event.recipes.thermal.bottler("thermal:sawdust_block", ["thermal:sawdust", Fluid.of("minecraft:water", 500)], 0, 1200);
     event.recipes.thermal.bottler("create:blaze_cake", ["create:blaze_cake_base", Fluid.of("cofh_core:potion", 500)], 0, 16000);
+
+    // phantom ink
+    // missing power and xp
+    // cant find potion id
+    // event.recipes.thermal.bottler("botania:phantom_ink", ["botania:vial", Potion.of("minecraft:slow_falling", 1000)], 0, 16000);
 
     event.recipes.thermal.crucible(Fluid.of("immersiveengineering:potion", 1000), "thermal:xp_stew", 0, 32000);
 
@@ -24,6 +28,14 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion("botania:gaia_ingot", "minecraft:nether_star", 50000);
     event.recipes.botania.mana_infusion(Item.of("botania:gaia_ingot",2), "minecraft:nether_star", 50000, "botania:alchemy_catalyst");
 
+    event.recipes.botania.mana_infusion("botania:blacker_lotus", "mythicbotany:wither_aconite", 6600, "botania:alchemy_catalyst");
+
+    // petal apothecary
+
+    // wither aconite
+    event.recipes.botania.petal_apothecary("mythicbotany:wither_aconite", ["minecraft:wither_rose","botania:phantom_ink","enderio:withering_powder","botania:black_petal","botania:black_petal","botania:black_petal","botania:black_petal","botania:black_lotus"]);
+    event.recipes.botania.petal_apothecary(Item.of("mythicbotany:wither_aconite",2), ["minecraft:wither_rose","botania:phantom_ink","enderio:withering_powder","botania:black_petal","botania:black_petal","botania:black_petal","botania:black_petal","botania:blacker_lotus"]);
+
     //energized steel
     event.recipes.powah.energizing(["#forge:ingots/bronze"], "powah:steel_energized", 10000);
     event.recipes.powah.energizing(["#forge:storage_blocks/bronze"], "powah:energized_steel_block", 100000);
@@ -35,14 +47,14 @@ ServerEvents.recipes(event => {
     //niotic crystal
     //mana pearl block
     event.recipes.powah.energizing(["botania:mana_diamond","botania:mana_pearl"], "powah:crystal_niotic", 500000);
-    event.recipes.powah.energizing(["botania:mana_diamond_block","botania:mana_pearl"], "powah:niotic_crystal_block", 5000000);
+    event.recipes.powah.energizing(["botania:mana_diamond_block",Item.of("botania:mana_pearl",9)], "powah:niotic_crystal_block", 5000000);
     
     //spirited crystal <= danks
     event.recipes.powah.energizing(["dankstorage:dank_4"], "powah:crystal_spirited", 1500000);
     event.recipes.powah.energizing(["dankstorage:dank_5"], "powah:spirited_crystal_block", 15000000);
 
     //nitro crystal
-    event.recipes.powah.energizing(["minecraft:nether_star", Item.of("create:chromatic_compound",8)], Item.of("powah:crystal_nitro",8), 20000000);
+    event.recipes.powah.energizing(["minecraft:nether_star", Item.of("create:chromatic_compound",8)], "powah:crystal_nitro", 20000000);
 
 
 

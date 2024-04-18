@@ -42,6 +42,9 @@ ServerEvents.recipes((event) => {
         {id: "powah:energizing/blazing_crystal_2"},
         {id: "powah:energizing/niotic_crystal"},
         {id: "powah:energizing/spirited_crystal"},
+        {id: "powah:energizing/nitro_crystal"},
+
+        {id: "mythicbotany:wither_aconite_petal_apothecary"},
     ];
 
     recipes.forEach((recipe) => {
