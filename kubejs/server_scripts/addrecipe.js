@@ -5,9 +5,27 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.bottler("create:blaze_cake", ["create:blaze_cake_base", Fluid.of("cofh_core:potion", 500)], 0, 16000);
 
     // phantom ink
-    // missing power and xp
-    // cant find potion id
-    // event.recipes.thermal.bottler("botania:phantom_ink", ["botania:vial", Potion.of("minecraft:slow_falling", 1000)], 0, 16000);
+    //event.recipes.thermal.bottler("botania:phantom_ink", ["botania:vial", Fluid.of('create:potion', 1000, {Potion: "minecraft:slow_falling"})], 0, 6000);
+    
+    // event.custom({
+    //     "type": "thermal:bottler",
+    //     "ingredients": [
+    //       {
+    //         "item": "botania:vial"
+    //       },
+    //       {
+    //         "fluid": "create:potion/slow_falling",
+    //         "tag":{"Bottle":"REGULAR","Potion":"minecraft:slow_falling"},
+    //         "amount": 1000
+    //       }
+    //     ],
+    //     "result": [
+    //       {
+    //         "item": "botania:phantom_ink"
+    //       }
+    //     ]
+    //   });
+
 
     event.recipes.thermal.crucible(Fluid.of("immersiveengineering:potion", 1000), "thermal:xp_stew", 0, 32000);
 
@@ -42,19 +60,19 @@ ServerEvents.recipes(event => {
 
     //blazing crystal
     event.recipes.powah.energizing(["mysticalagriculture:brass_essence"], "powah:crystal_blazing", 100000);
-    event.recipes.powah.energizing([Item.of("mysticalagriculture:blazing_crystal_essence",16)], "powah:blazing_crystal_block", 1000000);
+    event.recipes.powah.energizing([{item: "mysticalagriculture:soul_jar", nbt:JSON.stringify({Type: "mysticalagriculture:blaze", Souls: 10.0})}], "powah:blazing_crystal_block", 1000000);
     
     //niotic crystal
     //mana pearl block
     event.recipes.powah.energizing(["botania:mana_diamond","botania:mana_pearl"], "powah:crystal_niotic", 500000);
-    event.recipes.powah.energizing(["botania:mana_diamond_block",Item.of("botania:mana_pearl",9)], "powah:niotic_crystal_block", 5000000);
+    event.recipes.powah.energizing(["botania:mana_diamond_block","botania:gaia_ingot"], "powah:niotic_crystal_block", 5000000);
     
     //spirited crystal <= danks
     event.recipes.powah.energizing(["dankstorage:dank_4"], "powah:crystal_spirited", 1500000);
     event.recipes.powah.energizing(["dankstorage:dank_5"], "powah:spirited_crystal_block", 15000000);
 
     //nitro crystal
-    event.recipes.powah.energizing(["minecraft:nether_star", Item.of("create:chromatic_compound",8)], "powah:crystal_nitro", 20000000);
+    event.recipes.powah.energizing(["minecraft:nether_star", Item.of("create:chromatic_compound",4)], Item.of("powah:crystal_nitro",4), 20000000);
 
 
 
