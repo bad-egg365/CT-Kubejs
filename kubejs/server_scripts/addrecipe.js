@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.furnace(["mysticalagriculture:soulium_dust"], "minecraft:prismarine_crystals", 1, 1920)
     
     event.recipes.thermal.bottler("thermal:sawdust_block", ["thermal:sawdust", Fluid.of("minecraft:water", 500)], 0, 1200);
-    event.recipes.thermal.bottler("create:blaze_cake", ["create:blaze_cake_base", Fluid.of("cofh_core:potion", 500)], 0, 16000);
+    event.recipes.thermal.bottler("create:blaze_cake", ["create:blaze_cake_base", Fluid.of("enderio:liquid_sunshine", 500)], 0, 16000);
 
     // phantom ink
     //event.recipes.thermal.bottler("botania:phantom_ink", ["botania:vial", Fluid.of('create:potion', 1000, {Potion: "minecraft:slow_falling"})], 0, 6000);
@@ -27,9 +27,9 @@ ServerEvents.recipes(event => {
     //   });
 
 
-    event.recipes.thermal.crucible(Fluid.of("immersiveengineering:potion", 1000), "thermal:xp_stew", 0, 32000);
+    event.recipes.thermal.crucible(Fluid.of("enderio:cloud_seed", 1000), "thermal:xp_stew", 0, 32000);
 
-    event.recipes.thermal.brewer(Fluid.of("cofh_core:potion", 2000), ["thermal:spring_salad", Fluid.of("immersiveengineering:potion", 64000)], 0, 72000);
+    event.recipes.thermal.brewer(Fluid.of("enderio:liquid_sunshine", 2000), ["thermal:spring_salad", Fluid.of("enderio:cloud_seed", 64000)], 0, 72000);
 
     event.recipes.thermal.insolator( ["mysticalagriculture:tertium_essence", "botania:grass_seeds"], "botania:grass_seeds", 2000, 204800);
 
