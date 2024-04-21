@@ -120,6 +120,8 @@ craftingTable.remove(<item:powah:capacitor_basic_large>);
 craftingTable.remove(<item:enderio:octadic_capacitor>);
 craftingTable.remove(<item:enderio:double_layer_capacitor>);
 craftingTable.remove(<item:enderio:basic_capacitor>);
+craftingTable.remove(<item:botania:glimmering_livingwood>);
+craftingTable.remove(<item:create:electron_tube>);
 
 mods.mysticalagriculture.InfusionCrafting.remove(<item:mysticalagradditions:creative_essence>);
 
@@ -507,13 +509,13 @@ craftingTable.addShaped("16k_storage_part", <item:refinedstorage:16k_storage_par
 
 craftingTable.addShaped("4k_storage_part", <item:refinedstorage:4k_storage_part>, [
     [<item:refinedstorage:improved_processor>, <item:refinedstorage:quartz_enriched_iron>, <item:refinedstorage:improved_processor>], 
-    [<item:refinedstorage:1k_storage_part>, <item:dankstorage:dank_2>, <item:refinedstorage:1k_storage_part>], 
+    [<item:refinedstorage:1k_storage_part>, <item:dankstorage:dank_1>, <item:refinedstorage:1k_storage_part>], 
     [<item:refinedstorage:improved_processor>, <item:refinedstorage:1k_storage_part>, <item:refinedstorage:improved_processor>]]);
 
 craftingTable.addShaped("1k_storage_part", <item:refinedstorage:1k_storage_part>, [
-    [<item:refinedstorage:improved_processor>, <item:refinedstorage:quartz_enriched_iron>, <item:refinedstorage:improved_processor>], 
-    [<item:refinedstorage:1k_storage_part>, <item:dankstorage:dank_2>, <item:refinedstorage:1k_storage_part>], 
-    [<item:refinedstorage:improved_processor>, <item:refinedstorage:1k_storage_part>, <item:refinedstorage:improved_processor>]]);
+    [<item:refinedstorage:basic_processor>, <item:refinedstorage:quartz_enriched_iron>, <item:refinedstorage:basic_processor>], 
+    [<item:immersiveengineering:electronic_component>, <item:create:andesite_alloy>, <item:immersiveengineering:electronic_component>], 
+    [<item:refinedstorage:basic_processor>, <item:immersiveengineering:electronic_component>, <item:refinedstorage:basic_processor>]]);
 
 craftingTable.addShaped("alchcatalyst", <item:botania:alchemy_catalyst>, [
     [<item:minecraft:end_stone>, <item:minecraft:dragon_egg>, <item:minecraft:end_stone>], 
@@ -548,8 +550,10 @@ craftingTable.addShaped("octadic_capacitor", <item:enderio:octadic_capacitor>*2,
     [<item:enderio:vibrant_crystal>, <item:dankstorage:dank_3>, <item:enderio:pulsating_crystal>], 
     [<item:enderio:double_layer_capacitor>, <item:enderio:end_steel_ingot>, <item:enderio:double_layer_capacitor>]]);
 
+craftingTable.addShaped("glimmering_livingwood", <item:botania:glimmering_livingwood>, [
+    [<item:botania:livingwood>, <item:mythicbotany:vanaheim_rune>]]);
 
-
-//elven gateway
-
+craftingTable.addShaped("electron_tube", <item:create:electron_tube>, [
+    [<item:create:polished_rose_quartz>],
+    [<item:enderio:octadic_capacitor>]]);
 

@@ -6,4 +6,6 @@
 !kubejs/client_scripts/*.js
 !kubejs/server_scripts/*.js
 !kubejs/startup_scripts/*.js
+!scripts
+!scripts/*.zs
 !.gitignore

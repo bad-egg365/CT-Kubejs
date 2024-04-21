@@ -13,11 +13,24 @@ import mods.create.MixingManager;
 
 
 
+
+
+
+
+
+
 <recipetype:create:cutting>.addRecipe("cutting_test", <item:botania:livingwood_planks>, <item:botania:livingwood>);
+<recipetype:create:cutting>.addRecipe("cutting_test", <item:botania:livingwood>, <item:botania:stripped_livingwood_log>);
+
+//<recipetype:create:compacting>.addRecipe("gateway", <item:botania:alfheim_portal>, <fluid:enderio:dew_of_the_void>*375);
+
+<recipetype:create:compacting>.addRecipe("compacted", <constant:create:heat_condition:superheated>, [<item:botania:alfheim_portal>], [], [<fluid:enderio:dew_of_the_void> * 375], 12000);
 
 <recipetype:create:cutting>.addRecipe("cutting_test2", <item:botania:livingwood>, <item:botania:livingwood_log>);
 
 <recipetype:create:mixing>.addRecipe("prudi", <constant:create:heat_condition:none>, [<item:mysticalagriculture:prudentium_essence>], [<item:minecraft:emerald>, <item:mysticalagriculture:inferium_essence>*9], [], 1500);
+
+<recipetype:create:mixing>.addRecipe("void", <constant:create:heat_condition:superheated>, [<fluid:enderio:dew_of_the_void>*500], [<item:mythicbotany:helheim_rune>, <item:mythicbotany:nidavellir_rune>, <item:mythicbotany:niflheim_rune>, <item:mythicbotany:muspelheim_rune>, <item:mythicbotany:midgard_rune>, <item:mythicbotany:joetunheim_rune>], [], 12000);
 
 <recipetype:create:mixing>.addRecipe("infusion_crystal", <constant:create:heat_condition:heated>, [<item:mysticalagriculture:infusion_crystal>], [<item:mysticalagriculture:prosperity_gemstone>, <item:mysticalagriculture:prosperity_shard>*4], [], 1000);
 
@@ -82,7 +95,7 @@ import mods.create.MixingManager;
     .addStep<mods.createtweaker.CuttingRecipe>((rb) => rb.duration(100))
     .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:thermal:creosote>*1000))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:dankstorage:dank_4>))
-    .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:enderio:liquid_sunshine>*1000))
+    .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:enderio:liquid_sunshine>*500))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:mysticalagriculture:machine_frame>))
     .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:thermal:refined_fuel>*1000))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:shadow_steel>))
@@ -97,6 +110,7 @@ import mods.create.MixingManager;
     .addStep<mods.createtweaker.CuttingRecipe>((rb) => rb.duration(100))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:dankstorage:dank_2>))
     .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(500))
+    .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:electron_tube>))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:dankstorage:dank_2>))
     .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:thermal:syrup>*750))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:botania:mossy_livingrock_bricks>)));
@@ -211,8 +225,6 @@ import mods.create.MixingManager;
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:botania:livingwood_fence>))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersiveengineering:lantern>))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:dankstorage:dank_3>)));
-
-
 
 
 
