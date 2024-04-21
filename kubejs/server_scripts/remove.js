@@ -45,6 +45,8 @@ ServerEvents.recipes((event) => {
         {id: "powah:energizing/nitro_crystal"},
 
         {id: "mythicbotany:wither_aconite_petal_apothecary"},
+
+        {output:"thermal:sawdust_block"},
     ];
 
     recipes.forEach((recipe) => {
