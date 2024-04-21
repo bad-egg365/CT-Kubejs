@@ -122,6 +122,8 @@ craftingTable.remove(<item:enderio:double_layer_capacitor>);
 craftingTable.remove(<item:enderio:basic_capacitor>);
 craftingTable.remove(<item:botania:glimmering_livingwood>);
 craftingTable.remove(<item:create:electron_tube>);
+craftingTable.remove(<item:immersiveengineering:alloybrick>);
+craftingTable.remove(<item:thermal:flux_drill>);
 
 mods.mysticalagriculture.InfusionCrafting.remove(<item:mysticalagradditions:creative_essence>);
 
@@ -514,8 +516,8 @@ craftingTable.addShaped("4k_storage_part", <item:refinedstorage:4k_storage_part>
 
 craftingTable.addShaped("1k_storage_part", <item:refinedstorage:1k_storage_part>, [
     [<item:refinedstorage:basic_processor>, <item:refinedstorage:quartz_enriched_iron>, <item:refinedstorage:basic_processor>], 
-    [<item:immersiveengineering:electronic_component>, <item:create:andesite_alloy>, <item:immersiveengineering:electronic_component>], 
-    [<item:refinedstorage:basic_processor>, <item:immersiveengineering:electronic_component>, <item:refinedstorage:basic_processor>]]);
+    [<item:immersiveengineering:component_electronic>, <item:create:andesite_alloy>, <item:immersiveengineering:component_electronic>], 
+    [<item:refinedstorage:basic_processor>, <item:immersiveengineering:component_electronic>, <item:refinedstorage:basic_processor>]]);
 
 craftingTable.addShaped("alchcatalyst", <item:botania:alchemy_catalyst>, [
     [<item:minecraft:end_stone>, <item:minecraft:dragon_egg>, <item:minecraft:end_stone>], 
@@ -557,3 +559,7 @@ craftingTable.addShaped("electron_tube", <item:create:electron_tube>, [
     [<item:create:polished_rose_quartz>],
     [<item:enderio:octadic_capacitor>]]);
 
+craftingTable.addShaped("flux_drill", <item:thermal:flux_drill>, [
+    [<item:thermal:drill_head>, <item:minecraft:air>, <item:minecraft:air>], 
+    [<item:minecraft:air>, <item:dankstorage:upgrade_augment_1>, <item:thermal:rf_coil>], 
+    [<item:minecraft:air>, <item:thermal:flux_capacitor>, <item:minecraft:air>]]);

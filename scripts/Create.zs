@@ -19,8 +19,8 @@ import mods.create.MixingManager;
 
 
 
-<recipetype:create:cutting>.addRecipe("cutting_test", <item:botania:livingwood_planks>, <item:botania:livingwood>);
-<recipetype:create:cutting>.addRecipe("cutting_test", <item:botania:livingwood>, <item:botania:stripped_livingwood_log>);
+<recipetype:create:cutting>.addRecipe("lvplanks", <item:botania:livingwood_planks>, <item:botania:livingwood>);
+<recipetype:create:cutting>.addRecipe("lv", <item:botania:livingwood>, <item:botania:stripped_livingwood_log>);
 
 //<recipetype:create:compacting>.addRecipe("gateway", <item:botania:alfheim_portal>, <fluid:enderio:dew_of_the_void>*375);
 
