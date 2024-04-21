@@ -46,7 +46,9 @@ ServerEvents.recipes((event) => {
 
         {id: "mythicbotany:wither_aconite_petal_apothecary"},
 
-        {output: "thermal:bamboo_block"}
+        {output:"thermal:sawdust_block"},
+        
+        {output:"thermal:bamboo_block"},
     ];
 
     recipes.forEach((recipe) => {
