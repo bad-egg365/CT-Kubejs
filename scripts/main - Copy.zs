@@ -561,5 +561,5 @@ craftingTable.addShaped("electron_tube", <item:create:electron_tube>, [
 
 craftingTable.addShaped("flux_drill", <item:thermal:flux_drill>, [
     [<item:thermal:drill_head>, <item:minecraft:air>, <item:minecraft:air>], 
-    [<item:minecraft:air>, <item:dankstorage:upgrade_augment_1>, <item:thermal:rf_coil>], 
+    [<item:minecraft:air>, <item:thermal:upgrade_augment_1>, <item:thermal:rf_coil>], 
     [<item:minecraft:air>, <item:thermal:flux_capacitor>, <item:minecraft:air>]]);
