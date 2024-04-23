@@ -49,6 +49,9 @@ ServerEvents.recipes((event) => {
         {output:"thermal:sawdust_block"},
         
         {output:"thermal:bamboo_block"},
+
+        //remove all kiln recipes
+        {type: "immersiveengineering:alloy"}
     ];
 
     recipes.forEach((recipe) => {
