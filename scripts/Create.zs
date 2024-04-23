@@ -241,7 +241,7 @@ import mods.create.MixingManager;
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:glowstone>))
     .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(500))
     .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(500)));
-<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("glowy")
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("redstone")
 
     .transitionTo(<item:minecraft:bucket>)
     .require(<item:minecraft:bucket>)
