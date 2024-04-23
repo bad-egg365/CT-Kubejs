@@ -22,8 +22,6 @@ import mods.create.MixingManager;
 <recipetype:create:cutting>.addRecipe("lvplanks", <item:botania:livingwood_planks>, <item:botania:livingwood>);
 <recipetype:create:cutting>.addRecipe("lv", <item:botania:livingwood>, <item:botania:stripped_livingwood_log>);
 
-//<recipetype:create:compacting>.addRecipe("gateway", <item:botania:alfheim_portal>, <fluid:enderio:dew_of_the_void>*375);
-
 <recipetype:create:compacting>.addRecipe("compacted", <constant:create:heat_condition:superheated>, [<item:botania:alfheim_portal>], [], [<fluid:enderio:dew_of_the_void> * 375], 12000);
 
 <recipetype:create:cutting>.addRecipe("cutting_test2", <item:botania:livingwood>, <item:botania:livingwood_log>);
@@ -134,9 +132,9 @@ import mods.create.MixingManager;
     .loops(1)
     .addOutput(<item:thermal:signalum_dust>*2, 4)
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:copper_dust>))
-    .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:thermal:redstone>*500))
+    .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:thermal:redstone>*250))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:copper_dust>))
-    .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:thermal:redstone>*500))
+    .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:thermal:redstone>*250))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:copper_dust>)));
 
 
@@ -226,8 +224,34 @@ import mods.create.MixingManager;
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersiveengineering:lantern>))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:dankstorage:dank_3>)));
 
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("ender")
+    .transitionTo(<item:minecraft:bucket>)
+    .require(<item:minecraft:bucket>)
+    .loops(8)
+    .addOutput(<item:thermal:ender_bucket>, 1)
+    .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:ender_pearl>))
+    .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(500))
+    .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(500)));
 
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("glowy")
+    .transitionTo(<item:minecraft:bucket>)
+    .require(<item:minecraft:bucket>)
+    .loops(8)
+    .addOutput(<item:thermal:glowstone_bucket>, 1)
+    .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:glowstone>))
+    .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(500))
+    .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(500)));
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("glowy")
 
+    .transitionTo(<item:minecraft:bucket>)
+    .require(<item:minecraft:bucket>)
+    .loops(2)
+    .addOutput(<item:thermal:redstone_bucket>, 1)
+    .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:redstone_block>))
+    .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(1000))
+    .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(1000))
+    .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(1000))
+    .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(1000)));
 
 
 
