@@ -225,7 +225,7 @@ import mods.create.MixingManager;
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:dankstorage:dank_3>)));
 
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("ender")
-    .transitionTo(<item:minecraft:bucket>)
+    .transitionTo(<item:minecraft:pufferfish_bucket>)
     .require(<item:minecraft:bucket>)
     .loops(8)
     .addOutput(<item:thermal:ender_bucket>, 1)
@@ -234,16 +234,16 @@ import mods.create.MixingManager;
     .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(500)));
 
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("glowy")
-    .transitionTo(<item:minecraft:bucket>)
+    .transitionTo(<item:minecraft:salmon_bucket>)
     .require(<item:minecraft:bucket>)
     .loops(8)
     .addOutput(<item:thermal:glowstone_bucket>, 1)
-    .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:glowstone>))
+    .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:glowstone_dust>))
     .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(500))
     .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(500)));
+    
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("redstone")
-
-    .transitionTo(<item:minecraft:bucket>)
+    .transitionTo(<item:minecraft:cod_bucket>)
     .require(<item:minecraft:bucket>)
     .loops(2)
     .addOutput(<item:thermal:redstone_bucket>, 1)
