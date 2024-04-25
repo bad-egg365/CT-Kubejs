@@ -1,4 +1,9 @@
 ServerEvents.recipes(event => {    
+
+    event.shapeless("immersiveengineering:coal_coke", ["thermal:coal_coke"]);
+
+
+
     event.recipes.thermal.furnace(["mysticalagriculture:soulium_dust"], "minecraft:prismarine_crystals", 1, 1920)
     
     event.recipes.thermal.bottler("thermal:sawdust_block", ["thermal:sawdust", Fluid.of("minecraft:water", 500)], 0, 1200);
