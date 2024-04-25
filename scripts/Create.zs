@@ -24,8 +24,6 @@ import mods.create.MixingManager;
 
 <recipetype:create:compacting>.addRecipe("compacted", <constant:create:heat_condition:superheated>, [<item:botania:alfheim_portal>], [], [<fluid:enderio:dew_of_the_void> * 375], 12000);
 
-<recipetype:create:cutting>.addRecipe("cutting_test2", <item:botania:livingwood>, <item:botania:livingwood_log>);
-
 <recipetype:create:mixing>.addRecipe("prudi", <constant:create:heat_condition:none>, [<item:mysticalagriculture:prudentium_essence>], [<item:minecraft:emerald>, <item:mysticalagriculture:inferium_essence>*9], [], 1500);
 
 <recipetype:create:mixing>.addRecipe("void", <constant:create:heat_condition:superheated>, [<fluid:enderio:dew_of_the_void>*500], [<item:mythicbotany:helheim_rune>, <item:mythicbotany:nidavellir_rune>, <item:mythicbotany:niflheim_rune>, <item:mythicbotany:muspelheim_rune>, <item:mythicbotany:midgard_rune>, <item:mythicbotany:joetunheim_rune>], [], 12000);
