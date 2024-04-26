@@ -2,6 +2,8 @@ ServerEvents.recipes(event => {
 
     event.shapeless("immersiveengineering:coal_coke", ["thermal:coal_coke"]);
 
+    event.shapeless("immersiveengineering:storage_steel", ["thermal:steel_block"]);
+    event.shapeless("thermal:steel_block", ["immersiveengineering:storage_steel"]);
 
 
     event.recipes.thermal.furnace(["mysticalagriculture:soulium_dust"], "minecraft:prismarine_crystals", 1, 1920)
