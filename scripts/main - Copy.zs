@@ -249,7 +249,7 @@ craftingTable.addShaped("brasscasing", <item:dankstorage:dank_3>, [
 
 craftingTable.addShaped("machine_bottler", <item:thermal:machine_bottler>, [
     [<item:minecraft:air>, <item:minecraft:bucket>, <item:minecraft:air>], 
-    [<item:minecraft:glass>, <item:dankstorage:dank_3>, <item:minecraft:glass>], 
+    [<item:minecraft:glass>, <item:dankstorage:dank_2>, <item:minecraft:glass>], 
     [<item:thermal:copper_gear>, <item:thermal:rf_coil>, <item:thermal:copper_gear>]]);
 
 craftingTable.addShaped("machine_sawmill", <item:thermal:machine_sawmill>, [
