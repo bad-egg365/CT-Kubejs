@@ -124,6 +124,7 @@ craftingTable.remove(<item:botania:glimmering_livingwood>);
 craftingTable.remove(<item:create:electron_tube>);
 craftingTable.remove(<item:immersiveengineering:alloybrick>);
 craftingTable.remove(<item:thermal:flux_drill>);
+craftingTable.remove(<item:create:deployer>);
 
 mods.mysticalagriculture.InfusionCrafting.remove(<item:mysticalagradditions:creative_essence>);
 
@@ -563,3 +564,17 @@ craftingTable.addShaped("flux_drill", <item:thermal:flux_drill>, [
     [<item:thermal:drill_head>, <item:minecraft:air>, <item:minecraft:air>], 
     [<item:minecraft:air>, <item:thermal:upgrade_augment_1>, <item:thermal:rf_coil>], 
     [<item:minecraft:air>, <item:thermal:flux_capacitor>, <item:minecraft:air>]]);
+
+craftingTable.addShaped("deployer", <item:create:deployer>, [
+    [<item:create:brass_sheet>, <item:create:polished_rose_quartz>, <item:create:brass_sheet>], 
+    [<item:minecraft:air>, <item:thermal:upgrade_augment_1>, <item:minecraft:air>], 
+    [<item:minecraft:air>, <item:create:brass_hand>, <item:minecraft:air>]]);
+
+
+
+
+
+
+
+
+
