@@ -567,7 +567,7 @@ craftingTable.addShaped("flux_drill", <item:thermal:flux_drill>, [
 
 craftingTable.addShaped("deployer", <item:create:deployer>, [
     [<item:create:brass_sheet>, <item:create:polished_rose_quartz>, <item:create:brass_sheet>], 
-    [<item:minecraft:air>, <item:thermal:upgrade_augment_1>, <item:minecraft:air>], 
+    [<item:minecraft:air>, <item:create:brass_casing>, <item:minecraft:air>], 
     [<item:minecraft:air>, <item:create:brass_hand>, <item:minecraft:air>]]);
 
 
