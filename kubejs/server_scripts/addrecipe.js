@@ -38,9 +38,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.thermal.brewer(Fluid.of("enderio:liquid_sunshine", 2000), ["thermal:spring_salad", Fluid.of("enderio:cloud_seed", 64000)], 0, 72000);
 
-    event.recipes.thermal.insolator( ["mysticalagriculture:tertium_essence"], "botania:grass_seeds", 0, 204800);
+    event.recipes.thermal.insolator( ["mysticalagriculture:prudentium_essence"], "botania:grass_seeds", 0, 204800);
 
-    event.recipes.thermal.insolator("mysticalagriculture:prudentium_essence","mysticalagriculture:tertium_essence", 0, 20000);
+    // event.recipes.thermal.insolator("mysticalagriculture:prudentium_essence","mysticalagriculture:tertium_essence", 0, 20000);
 
     event.recipes.thermal.smelter(["botania:alfhein_portal"], ["6x botania:livingwood", "mythichobotany:alfheim_rune", "mysticalagradditions:creative_essence"], 0, 1500000);
 
