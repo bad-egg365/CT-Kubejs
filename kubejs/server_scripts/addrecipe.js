@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.thermal.furnace(["mysticalagriculture:soulium_dust"], "minecraft:prismarine_crystals", 1, 1920)
     
-    event.recipes.thermal.bottler("thermal:sawdust_block", ["thermal:sawdust", Fluid.of("minecraft:water", 500)], 0, 1200);
+    event.recipes.thermal.bottler("thermal:sawdust_block", ["#forge:sawdust", Fluid.of("minecraft:water", 500)], 0, 1200);
     event.recipes.thermal.bottler("create:blaze_cake", ["create:blaze_cake_base", Fluid.of("enderio:liquid_sunshine", 500)], 0, 16000);
 
     // phantom ink
